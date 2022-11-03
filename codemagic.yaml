@@ -1,5 +1,9 @@
 workflows:
   build:
     name: Build
+    environment:
+      groups:
+        - release
     scripts:
-        - ./build.sh
+      - ./build.sh
+      - ./release.sh
