@@ -1,0 +1,5 @@
+workflows:
+  build:
+    name: Build
+    scripts:
+        - ./build.sh
