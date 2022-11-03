@@ -1,6 +1,13 @@
 workflows:
   build:
     name: Build
+    triggering:
+      events:
+        - push
+      branch_patterns:
+        - pattern: 'main'
+          include: true
+          source: true
     environment:
       groups:
         - release
