@@ -12,4 +12,4 @@ gh release create \
     --title "$commit" \
     --notes '' \
     "v-${commit}" \
-    'jq'
+    ./jq-*/jq
